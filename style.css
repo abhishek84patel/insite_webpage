@@ -83,7 +83,7 @@ ul {
   gap: 2rem;
 }
 
-ul > li > a {
+ul>li>a {
   color: #232020;
   font-family: Noto Sans Balinese;
   font-size: 18px;
@@ -108,18 +108,22 @@ nav::after {
   padding: 100px 0;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  width: 100%;
+  min-height: 600px;
 }
 
 /* .main-content .left {} */
 .main-content .left {
   padding: 32px 32px 48px 32px;
+  position: relative;
 }
+
 .main-content .left .content-wrapper {
   font-family: "poppins";
   position: absolute;
-  width: 636px;
-  height: 498px;
-  left: 5%;
+  max-width: 636px;
+  width: 100%;
+  left: 20%;
   background-color: rgb(250, 255, 253);
   box-shadow: 0px 0px 22.513891220092773px 0px #0000001a;
   padding: 32px 32px 48px 32px;
@@ -128,16 +132,28 @@ nav::after {
   transform: translateY(-50%);
   z-index: 1;
 }
+
 .left .content-wrapper h1 {
   padding-right: 4rem;
 }
-.main-content .right img {
+
+.main-content .right {
+  /* max-width: 838px;
+  height: 559px; */
+  /* max-width: 800px;
+
+  width: 100%; */
+  background: url("./image/home-hero-img\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 838px;
-  height: 559px;
+  height: 500px;
 }
+
 .main-content .left button {
   margin-top: 2rem;
 }
+
 span {
   color: #ef4136;
 }
@@ -168,6 +184,7 @@ span {
   margin-bottom: 2rem;
   position: relative;
 }
+
 .offers h2::after {
   content: "";
   position: absolute;
@@ -178,52 +195,62 @@ span {
   height: 3px;
   background-color: #ef4136;
 }
+
 .offers .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
+
 .card {
   width: 100%;
 }
+
 .card .img-wrapper {
   height: 200px;
 }
+
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .card p,
 .card h3 {
   line-height: normal;
   font-size: 1rem;
   text-align: center;
 }
+
 /* events */
 .events {
   background-color: #fdebe5;
   padding: 100px 0;
   position: relative;
 }
+
 .events::before {
   content: url(image/array-left.png);
   position: absolute;
   left: 0;
   bottom: -1rem;
 }
+
 .events::after {
   content: url(image/arrow-right.png);
   position: absolute;
   right: 0;
   top: 0;
 }
+
 .events h2,
 .blog h2 {
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .events h2::after {
   content: "";
   position: absolute;
@@ -242,16 +269,20 @@ span {
   padding: 0 5rem;
   gap: 1rem;
 }
+
 .events .card {
   width: 100%;
 }
+
 .events .card .card-img {
   height: 200px;
 }
+
 .events .card .card-img img {
   width: 100%;
   height: 100%;
 }
+
 .events .card .card-content h3,
 .blog .cards .card h3 {
   text-align: left;
@@ -259,15 +290,18 @@ span {
   font-size: 0.9rem;
   height: 80px;
 }
+
 .events .card .card-content {
   background-color: #fff;
   padding: 1rem;
 }
-.events .card .card-content > div {
+
+.events .card .card-content>div {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
 .events .card .card-content img {
   width: 24px;
   height: 24px;
@@ -277,17 +311,20 @@ span {
 .blog .cards .card a {
   color: #ef4136;
 }
+
 .events button {
   display: block;
   margin: auto;
   margin-top: 2rem;
 }
+
 .review {
   padding: 200px 0;
   display: flex;
   overflow: hidden;
   position: relative;
 }
+
 .review::before {
   content: url(image/double-arrow.png);
   position: absolute;
@@ -296,6 +333,7 @@ span {
   transform: translateY(-50%);
   z-index: -1;
 }
+
 .review::after {
   content: url(image/Quote\ Mark.svg);
   position: absolute;
@@ -304,15 +342,18 @@ span {
   transform: translateY(-50%);
   z-index: -1;
 }
+
 .review-head {
   margin-inline: 76px;
 }
+
 .review-head h2 {
   line-height: 1.5;
   width: 410px;
   position: relative;
   margin-bottom: 20px;
 }
+
 .review-head h2::after {
   content: "";
   position: absolute;
@@ -332,31 +373,38 @@ span {
   grid-template-columns: repeat(2, 320px) 450px;
   gap: 2rem;
 }
+
 .review .cards .card {
   background-color: #fff;
 }
+
 .card .card-head h3,
 p {
   text-align: left;
   font-size: 16px;
 }
+
 .card .card-details {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+
 .review .cards .card p {
   text-align: left;
   font-size: 16px;
   color: var(--c-3, #6d6e71);
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
+
 .review .cards .card {
   width: 100%;
   box-shadow: 0px 10px 50px 0px rgba(1, 23, 13, 0.1);
   padding: 30px 24px;
   border-radius: 8px;
 }
+
 .review .card-source {
   display: flex;
   margin-top: auto;
@@ -368,21 +416,26 @@ p {
   padding: 100px 1rem;
   background: #fdebe5;
 }
+
 .blog .cards .card {
   background-color: #fff;
   border-radius: 8px;
 }
+
 .blog .cards .card p {
   text-align: left;
   font-size: 16px;
-  line-height:1.5;
+  line-height: 1.5;
 }
-.blog .card .card-details{
+
+.blog .card .card-details {
   padding: 1rem;
 }
-.blog .card .card-details h3{
+
+.blog .card .card-details h3 {
   height: unset;
 }
-.blog .cards{
+
+.blog .cards {
   padding: 0 1rem;
 }
