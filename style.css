@@ -50,7 +50,7 @@ header {
 }
 
 nav img {
-  width: 263px;
+  width: 20%;
 }
 
 nav {
@@ -807,7 +807,7 @@ footer .bottom .content a {
 
   footer .bottom .content .one img {
     max-width: 263px;
-    width: 100%;
+    width: 40%;
   }
 
   .left .content-wrapper h1 {
@@ -822,4 +822,13 @@ footer .bottom .content a {
     left: -99px;
     scale: 0.37;
   }
+  .main-content .right {
+    background-position: 80%;
+}
+.main .v-img{
+  display: none;
+}
+.events::after{
+  display: none;
+}
 }
