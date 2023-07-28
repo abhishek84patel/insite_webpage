@@ -512,7 +512,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   gap: 100px;
-  padding: 3rem 0;
+  padding: 3rem ;
 
 
 }
@@ -713,8 +713,12 @@ footer{
 @media screen and (max-width:850px) {
   nav>ul {
     display: none;
+  }.material-symbols-outlined {
+    display: unset;
+    margin-left: 1.2rem;
+    font-size: 3rem;
   }
-
+ 
   .footer {
     padding: 3rem;
   }
@@ -788,6 +792,9 @@ footer{
   @media screen and (max-width: 1024px) {
     .footer .bottom .content {
       grid-template-columns: 1fr;
+    }
+    .footer .top .content{
+      justify-content: center;
     }
   }
 
