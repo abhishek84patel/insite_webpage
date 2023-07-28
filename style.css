@@ -158,9 +158,9 @@ span {
   content: url(./image/Vector.png);
   position: absolute;
 
-  top: 21%;
-  left: 0;
-  scale: 1;
+  top: 25%;
+  left: -17px;
+  scale: 0.9;
 }
 
 .offers {
@@ -184,7 +184,7 @@ span {
 .offers h2::after {
   content: "";
   position: absolute;
-  top: 75%;
+  top: 100%;
   width: 40px;
   right: 50%;
   transform: translateX(30%);
@@ -256,7 +256,7 @@ span {
 .events h2::after {
   content: "";
   position: absolute;
-  top: 80%;
+  top: 100%;
   width: 50px;
   right: 50%;
   transform: translateX(50%);
@@ -453,7 +453,8 @@ p {
 }
 
 .profit .content {
-  max-width: 650px;
+
+  padding: 0 3rem;
 }
 
 .profit .content h3 {
@@ -511,6 +512,7 @@ footer .top .content {
   padding: 32px 46px;
   background-color: #fff;
   border-radius: 8px;
+  align-items: center;
 }
 
 footer .top .content .left h3 {
@@ -527,6 +529,7 @@ footer .top .content .right button {
   background-color: #EF4136;
 
 }
+
 footer .bottom .content .one p {
   color: #595959;
   margin-top: 41px;
@@ -534,9 +537,11 @@ footer .bottom .content .one p {
   padding-right: 80px;
   line-height: 24px;
 }
-footer .bottom .content .one img{
+
+footer .bottom .content .one img {
   max-width: 263px;
 }
+
 footer .bottom .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -548,7 +553,8 @@ footer .bottom .content .quick {
   flex-direction: column;
   gap: 24px;
 }
-footer .bottom .content .quick .social-icon ul{
+
+footer .bottom .content .quick .social-icon ul {
   display: flex;
   gap: 24px;
 }
@@ -573,6 +579,12 @@ footer .bottom .content a {
 
 @media screen and (max-width:1150px) {
 
+  .main-content span::before {
+
+    top: 29%;
+    left: 31px;
+    scale: 0.6;
+  }
 
   .left .content-wrapper h1 {
     padding-right: 2.5rem;
@@ -580,6 +592,16 @@ footer .bottom .content a {
 
   .main-content .right {
     background-position: center;
+  }
+
+  .profit {
+    padding: 100px 3rem;
+  }
+
+  .main .v-img {
+
+    left: 0;
+    bottom: -43px;
   }
 }
 
@@ -636,4 +658,54 @@ footer .bottom .content a {
     height: 300px;
   }
 
+  /* profit media query */
+  .profit {
+    gap: 24px;
+    /* padding: 100px 3rem; */
+    padding-bottom: 0;
+    padding-right: 0;
+    grid-template-columns: 1fr;
+    justify-items: end;
+  }
+
+  .profit .content {
+    width: 100%;
+    max-width: unset;
+
+
+  }
+
+  footer .bottom .content {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .footer .bottom .content .one {
+    grid-column: 1/3;
+    grid-row: 3/3;
+  }
+}
+
+@media screen and (max-width:850px) {
+  nav>ul {
+    display: none;
+  }
+
+  footer .top .content {
+    padding: 22px 26px;
+  }
+
+  footer .top .content .left h3 {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width:768px) {
+    footer{
+      padding: 3rem;
+    }
+    .offers,.events{
+      padding: 3rem;
+    }
+  }
 }
