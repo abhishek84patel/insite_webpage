@@ -778,24 +778,48 @@ footer .bottom .content a {
     margin-inline: unset;
     padding: 0 1.5rem;
   }
-  .review{
+
+  .review {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .review .cards{
+
+  .review .cards {
     display: flex;
     flex-wrap: wrap;
   }
-  .review-head h2{
+
+  .review-head h2 {
     width: 100%;
   }
-  .main-content .left .content-wrapper{
+
+  .main-content .left .content-wrapper {
     padding: 1.5rem;
   }
-  .profit{
+
+  .profit {
     padding: unset;
   }
-  .profit .content{
+
+  .profit .content {
     padding: 0 1.5rem;
+  }
+
+  footer .bottom .content .one img {
+    max-width: 263px;
+    width: 100%;
+  }
+
+  .left .content-wrapper h1 {
+    padding: unset;
+  }
+  .main-content .left .content-wrapper h1{
+    line-height: 38px;
+    font-size: 1.5rem;
+  }
+  .main-content span::before{
+    top: 13%;
+    left: -99px;
+    scale: 0.37;
   }
 }
