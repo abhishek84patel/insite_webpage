@@ -659,10 +659,10 @@ footer .bottom .content a {
     height: 300px;
   }
 
-  /* profit media query */
+
   .profit {
     gap: 24px;
-    /* padding: 100px 3rem; */
+
     padding-bottom: 0;
     padding-right: 0;
     grid-template-columns: 1fr;
@@ -802,7 +802,7 @@ footer .bottom .content a {
   }
 
   .profit .content {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0rem;
   }
 
   footer .bottom .content .one img {
@@ -813,49 +813,83 @@ footer .bottom .content a {
   .left .content-wrapper h1 {
     padding: unset;
   }
-  .main-content .left .content-wrapper h1{
+
+  .main-content .left .content-wrapper h1 {
     line-height: 38px;
     font-size: 1.5rem;
   }
-  .main-content span::before{
+
+  .main-content span::before {
     top: 13%;
     left: -99px;
     scale: 0.37;
   }
+
   .main-content .right {
     background-position: 80%;
-}
-.main .v-img{
-  display: none;
-}
-.events::after{
-  display: none;
-}
-.main-content {
-  display: grid;
-  padding: 50px 0;
-}
-.profit .content h3 {
-  font-size: 1.5rem;
-  
-}footer .top .content{
-  padding: 10px;
-  text-align: center;
-}
-footer .top .content .left h3 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
- 
-   
-}
-footer .top .content .right button{
-  margin-top: 10px;
+  }
+
+  .main .v-img {
+    display: none;
+  }
+
+  .events::after {
+    display: none;
+  }
+
+  .main-content {
+    display: grid;
+    padding: 50px 0;
+  }
+
+  .profit .content h3 {
+    font-size: 1.5rem;
+
+  }
+
+  footer .top .content {
     padding: 10px;
-}
-footer .top .content .left p{
-  text-align: center;
-}
-footer .bottom .content .one p{
-  padding: unset;
-}
+    text-align: center;
+  }
+
+  footer .top .content .left h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+
+  }
+
+  footer .top .content .right button {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  footer .top .content .left p {
+    text-align: center;
+  }
+
+  footer .bottom .content .one p {
+    padding: unset;
+  }
+
+  .events,
+  .offers,
+  .blog {
+    padding: 20px 1.5rem;
+  }
+
+  .review {
+    padding: 20px 0;
+  }
+
+  footer,
+  .profit {
+    padding: 50px 1.5rem;
+    padding-bottom: unset;
+    justify-items: center;
+  }
+
+  .events::before {
+    display: none;
+  }
 }
