@@ -802,7 +802,7 @@ footer .bottom .content a {
   }
 
   .profit .content {
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   footer .bottom .content .one img {
@@ -830,5 +830,32 @@ footer .bottom .content a {
 }
 .events::after{
   display: none;
+}
+.main-content {
+  display: grid;
+  padding: 50px 0;
+}
+.profit .content h3 {
+  font-size: 1.5rem;
+  
+}footer .top .content{
+  padding: 10px;
+  text-align: center;
+}
+footer .top .content .left h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+ 
+   
+}
+footer .top .content .right button{
+  margin-top: 10px;
+    padding: 10px;
+}
+footer .top .content .left p{
+  text-align: center;
+}
+footer .bottom .content .one p{
+  padding: unset;
 }
 }
